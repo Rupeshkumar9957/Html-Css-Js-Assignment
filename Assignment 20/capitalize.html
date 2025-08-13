@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitalize array</title>
+</head>
+<body>
+    <script>
+        const names=["Arjun","Vinita","Ravi","Nisha","Ishan","Priya","Veer","Siddhrth","Anika","Karan","Ayesha","Rahul"];
+        const capitalize=names.map(str=>
+            str.charAt(0).toUpperCase()+str.slice(1)
+        );
+        document.write(capitalize);
+        const normalArray = ["apple", "banana", "mango", "grapes"];
+
+// Capitalize each string
+const capitalizedArray = normalArray.map(str => 
+  str.charAt(0).toUpperCase() + str.slice(1)
+);
+
+console.log(capitalizedArray);
+
+    </script>
+</body>
+</html>

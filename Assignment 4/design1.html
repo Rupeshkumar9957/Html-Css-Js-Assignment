@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Design 1</title>
+        <style type="text/css">
+            *{
+                margin: auto;
+                box-sizing: border-box;
+            }
+            .container{
+                margin-top: 20px;
+                width: 350px;
+                height: 400px;
+                text-align: center;
+            }
+            .bor{
+                border: 1px solid green;
+            }
+            .row1{
+                width: 350px;
+                height: 50px;
+                padding-top: 15px;
+            }
+            .row2{
+                width: 350px;
+                height: 100px;
+                display: flex;
+            }
+            .col1{
+                width: 175px;
+                height: 50px;
+                padding-top: 15px;
+            }
+            .col2{
+                width: 175px;
+                height: 100px;
+                padding-top: 45px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container bor">
+            <div class="row1 bor">Header</div>
+            <div class="row1 bor">Navigation</div>
+            <div class="row2">
+                <div>
+                     <div class="col1 bor">Course</div>
+                     <div class="col1 bor">About</div>
+                </div>
+                <div class="col2 bor">Gallery</div>
+            </div>
+            <div class="row2">
+                <div class="col2 bor">Home</div>
+                <div>
+                     <div class="col1 bor">About</div>
+                     <div class="col1 bor">Course</div>
+                </div>
+            </div>
+            <div class="row2">
+                <div>
+                     <div class="col1 bor">Welcome</div>
+                     <div class="col1 bor">IIP</div>
+                </div>
+                <div class="col2 bor">WsCube tech</div>
+            </div>
+        </div>
+    </body>
+</html>

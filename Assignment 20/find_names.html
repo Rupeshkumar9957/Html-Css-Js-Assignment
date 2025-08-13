@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale=1.0>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function find_name(arr){
+            var result=[];
+            for(var i=0;i<arr.length;i++){
+                var name=arr[i];
+                var char=name.charAt(0).toUpperCase();
+                if(char=='A' ||char=='E' || arr[i][0]=='I' ||arr[i][0]=='O' || arr[i][0]=='U' && arr[i].length>5){
+                    result.push(arr[i]);
+                }              
+            }
+            return result
+        }
+           
+        const names=["Arjun","Vinita","Ravi","Nisha","Ishan","Priya","Veer","Siddhrth","Anika","Karan","Ayesha","Rahul","Uma","Neha","Deepak","Kavita","Aditya","Divya","Rohan"];
+        var result=find_name(names);
+        document.write('This is original array : '+names)
+        document.write("<br>This is Result array : "+result);
+    </script>
+</body>
+</html>

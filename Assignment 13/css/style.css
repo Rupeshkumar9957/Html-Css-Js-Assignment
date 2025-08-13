@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    margin:  30px auto;
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    flex-basis: 31%;
+    margin: 1%;
+    box-shadow: 0px 0px 5px 1px gray;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 280px;
+}
+.box img{
+    width: 100%;
+    border-radius: 15px;
+    height: 280px;
+
+}
+.content h2{
+    padding-bottom:15px ;
+    color: aquamarine;
+}
+.content p{
+    padding-bottom:10px ;
+}
+.content button{
+    width: 90px;
+    height: 25px;
+}
+.content{
+    height: 280px;
+    font-weight: 200;
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    opacity: 0;
+    visibility: hidden;
+    color: white;
+    transition: 2s;
+    background: rgba(57, 54, 54, 0.5);
+}
+.box:hover .content{
+    opacity: 1;
+    visibility: visible;
+}

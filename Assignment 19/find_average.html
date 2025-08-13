@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Average Number</title>
+</head>
+<body>
+    <script>
+        var array=[20,30,40,50,60];
+        var sum=0;
+        for(var i=0;i<array.length;i++){
+            sum=sum+array[i];
+        }
+        sum=sum/array.length;
+        for(var j=0;j<array.length;j++){
+            if(sum==array[j]){
+                sum=array[j];
+                document.write("The average number is "+sum +' At index '+ j);
+            } 
+        }
+        
+    </script>
+</body>
+</html>
