@@ -13,7 +13,7 @@ body{
     background: rgb(7, 49, 97)
 }
 .main{
-    width: 700px;
+    width: 750px;
     height: 700px;
     margin:30px auto ;
     box-sizing: border-box;   
@@ -39,7 +39,7 @@ body{
     position: absolute;
     top: -35px;
     left: -35px;
-    animation: runner 22s linear infinite;
+    animation: runner 21s linear infinite;
 }
 .third{
     width: 460px;
@@ -77,12 +77,19 @@ body{
     left: 175px;
     animation: runner 9s linear infinite;
 }
+.seventh{
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    position: absolute;
+    top: 210px;
+    left: 205px;
+    animation: runner 6s linear infinite;
+}
 .dots{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    margin-top: 50%;
-    margin-left: -10px;
 }
 
 
@@ -102,6 +109,17 @@ body{
     margin-top: 50%;
     margin-left: -18px;
     box-sizing: border-box;
+    
+}
+.outer1{
+  width: 7px;
+  height: 7px;
+  border: 2px solid red;
+  margin-top: 255px;
+  margin-left: 440px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  
 }
 .point{
     width: 20px;
@@ -109,6 +127,15 @@ body{
     border-radius: 50%;
     margin: 1px 7px;
     box-sizing: border-box;
+    
+}
+.point1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 1px 7px;
+    box-sizing: border-box;
+    border-top-width: 2px;
 }
     </style>
 </head>
@@ -120,27 +147,31 @@ body{
                 </div>
             </div>
             <div class="second bor" >
-                <div class="dots" style="background: rgb(158, 13, 202);"></div>
+                <div class="dots" style="background: rgb(158, 13, 202); margin: 415px 42px;"></div>
             </div>
             <div class="third bor">
-                <div class="dots" style="background: rgb(21, 187, 165);"></div>
+                <div class="outer1">
+                    <div class="point1" style="background: rgb(21, 187, 165); margin: 0px 5px"></div>
+                </div>
             </div>
             <div class="forth bor">
-                <div class="dots" style="background: rgb(17, 173, 82);"></div>
+                <div class="dots" style="background: rgb(17, 173, 82); margin: 370px auto;"></div>
             </div>
             <div class="fifth bor" >
-                <div class="dots" style="background: rgb(152, 173, 29);"></div>
+                <div class="dots" style="background: rgb(152, 173, 29); margin: -10px auto;"></div>
             </div>
             <div class="sixth bor">
-                <div class="dots" style="background: rgb(236, 119, 9);"></div>
+                <div class="dots" style="background: rgb(198, 106, 20); margin: 95px 225px;"></div>
             </div>
             <div class="seventh bor">
-                <div class="dots"></div>
+                <div class="dots" style="background: red; margin: 120px 2px;"></div>
             </div>
 
     </div>
     <div class="main2">
-        <div class="point"></div>
-    </div>
+                <div class="outer1">
+                    <div class="point1" style="background: rgb(21, 187, 165); margin: 0px 5px"></div>
+                </div>
+            </div>
 </body>
 </html>
