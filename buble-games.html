@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move circle</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: auto;
+            height: 100vh;
+            border: 1px solid goldenrod;
+            background: rgb(7, 97, 214);
+            width: 500px;
+            display: flex;
+            overflow: hidden;
+            
+        }
+        .move{
+            border-radius: 50%;
+            /* animation: movecircle 2s  */
+            /* transition: 5s; */
+            border: 1px solid red;
+           
+        }
+        @keyframes movecircle{
+            0%{
+                transform: translate(0px 0px);
+            }
+            100%{
+                transform: translate(0px,120vh);
+            }
+        }
+        .cir1{
+            width: 50px;
+            height: 50px;
+            animation: movecircle infinite 3s linear reverse;
+        }
+        .cir2{
+            width: 70px;
+            height: 70px;
+            animation: movecircle infinite 5s ease reverse;
+        }
+        .cir3{
+            width: 90px;
+            height: 90px;
+            animation: movecircle infinite 8s ease-in-out reverse;
+        }
+        .cir4 {
+            width: 100px;
+            height: 100px;
+            animation: movecircle infinite 7s ease-in reverse;
+        }
+
+        .cir5{
+            width: 90px;
+            height: 90px;
+            animation: movecircle infinite 10s ease-out reverse;
+        }
+
+        .cir6{
+            width: 70px;
+            height: 70px;
+            animation: movecircle infinite 4s linear reverse;
+        }
+        .cir7{
+            width: 50px;
+            height: 50px;
+            animation: movecircle infinite 6s linear reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cir1 move"></div>
+        <div class="cir2 move"></div>
+        <div class="cir3 move"></div>
+        <div class="cir4 move"></div>
+        <div class="cir5 move"></div>
+        <div class="cir6 move"></div>
+        <div class="cir7 move"></div>
+    </div>
+</body>
+</html>
