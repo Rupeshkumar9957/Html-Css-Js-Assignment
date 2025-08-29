@@ -14,25 +14,23 @@
             margin: auto;
             height: 100vh;
             border: 1px solid goldenrod;
-            background: rgb(7, 97, 214);
-            width: 500px;
-            display: flex;
+            background: rgba(10, 94, 172, 0.815);
+            width: 100vh;
+            flex-wrap: wrap;
             overflow: hidden;
             
         }
         .move{
             border-radius: 50%;
-            /* animation: movecircle 2s  */
-            /* transition: 5s; */
-            border: 1px solid red;
+            overflow: hidden;
            
         }
         @keyframes movecircle{
             0%{
-                transform: translate(0px 0px);
+                transform: translate(0px,-50px);
             }
             100%{
-                transform: translate(0px,120vh);
+                transform: translate(0px,100vh);
             }
         }
         .cir1{
@@ -72,16 +70,43 @@
             height: 50px;
             animation: movecircle infinite 6s linear reverse;
         }
+        .row1{
+            display: flex;
+            justify-content: space-between;
+        }
+        .center{
+            width: 25%;
+            height: 25%;
+            border-radius: 50%;
+            background: yellow;
+            box-shadow: 0px 0px 40px 20px white;
+            margin: 40% 35%;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="cir1 move"></div>
-        <div class="cir2 move"></div>
-        <div class="cir3 move"></div>
-        <div class="cir4 move"></div>
-        <div class="cir5 move"></div>
-        <div class="cir6 move"></div>
+        <div class="row1">
+        <div class="cir1 move">
+            <p class="center"></p>
+        </div>
+        <div class="cir2 move">
+            <p class="center"></p>
+        </div>
+        <div class="cir3 move">
+            <p class="center"></p>
+        </div>
+        <div class="cir4 move">
+            <p class="center"></p>
+        </div>
+        <div class="cir5 move">
+            <p class="center"></p>
+        </div>
+        <div class="cir6 move">
+            <p class="center"></p>
+        </div>
+        
+        </div>
         <div class="cir7 move"></div>
     </div>
 </body>
